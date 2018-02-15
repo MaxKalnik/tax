@@ -1,0 +1,222 @@
+.rankings__intro
+  position: relative
+
+.rankings__item
+  display: flex
+  flex-wrap: wrap
+  margin-bottom: 45px
+  &:last-child
+    margin-bottom: 0
+
+  +respond-to($xsmall)
+    display: flex
+    flex-direction: column
+    margin-bottom: 32px
+    &:last-child
+      margin-bottom: 0
+
+.rankings__item-title
+  font-size: 24px
+  line-height: 32px
+  font-weight: 600
+  margin-bottom: 16px
+
+  +respond-to($xsmall)
+    text-align: center
+
+.rankings__wrapper
+  width: 800px
+  margin: 0 auto
+
+  +respond-from($large)
+    width: 1000px
+
+  +respond-to($small)
+    width: 690px
+
+  +respond-to($xsmall)
+    width: calc(100% - 24px)
+
+.rankings__item-num-block
+  width: 67px
+  margin-right: 12px
+
+  +respond-to($xsmall)
+    width: auto
+    margin: 0 auto 16px auto
+
+.rankings__item-num
+  font-size: 60px
+  line-height: 64px
+  font-weight: 700
+  text-align: right
+  color: $color-green
+
+  +respond-from($large)
+    font-size: 64px
+    line-height: 68px
+
+.rankings__item-text
+  width: $rankings_item-table-width
+  @extend .main-text
+
+  +respond-from($large)
+    width: $rankings_item-table-width-large
+
+  +respond-to($small)
+    width: $rankings_item-table-tab-width
+
+  +respond-to($xsmall)
+    width: 100%
+    order: 3
+
+.rankings__item-table
+  width: $rankings_item-table-width
+  display: flex
+  flex-direction: row
+  border: 1px solid $color-green
+  margin-bottom: 16px
+  box-sizing: border-box
+
+  +respond-from($large)
+    width: $rankings_item-table-width-large
+
+  +respond-to($small)
+    width: $rankings_item-table-tab-width
+
+  +respond-to($xsmall)
+    width: $rankings_item-table-mob-width
+    flex-direction: column
+    box-sizing: content-box
+    margin: 0 auto 16px auto
+
+.rankings__item-table-cell
+  height: 58px
+  display: flex
+  flex-direction: row
+  align-items: center
+  padding: 24px
+  border-right: 1px solid $color-green
+  box-sizing: border-box
+  &:last-child
+    border-right: none
+
+  &:nth-child(1)
+    width: 27%
+
+  &:nth-child(2)
+    width: 38%
+
+  &:nth-child(3)
+    width: 35%
+
+  +respond-to($small)
+    padding: 12px
+
+    &:nth-child(1)
+      width: 30%
+
+    &:nth-child(2)
+      width: 34%
+
+    &:nth-child(3)
+      width: 35%
+
+  +respond-to($xsmall)
+    padding: 16px 24px
+    border-right: none
+    border-bottom: 1px solid $color-green
+
+    &:nth-child(1)
+      width: $rankings_item-table-mob-width
+
+    &:nth-child(2)
+      width: $rankings_item-table-mob-width
+
+    &:nth-child(3)
+      width: $rankings_item-table-mob-width
+      border-bottom: none
+
+.rankings__item-table-cell--first
+  &:before
+    content: ''
+    min-width: 16px
+    height: 16px
+    background: url(images/svg/icon-tax-green.svg) center no-repeat
+    background-size: cover
+    margin-right: 12px
+
+.rankings__item-table-cell--second
+  &:before
+    content: ''
+    min-width: 18px
+    height: 15px
+    background: url(images/svg/icon-spending-green.svg) center no-repeat
+    background-size: cover
+    margin-right: 14px
+
+.rankings__item-table-cell--third
+  &:before
+    content: ''
+    min-width: 18px
+    height: 15px
+    background: url(images/svg/icon-income-green.svg) center no-repeat
+    background-size: cover
+    margin-right: 14px
+
+.rankings__wrapper--yellow
+  .rankings__item-table-cell
+    &:last-child
+      border-right: none
+
+  .rankings__item-table-cell--first
+    &:before
+      background: url(images/svg/icon-tax-yellow.svg) center no-repeat
+      background-size: cover
+
+  .rankings__item-table-cell--second
+    &:before
+      background: url(images/svg/icon-spending-yellow.svg) center no-repeat
+      background-size: cover
+
+  .rankings__item-table-cell--third
+    &:before
+      background: url(images/svg/icon-income-yellow.svg) center no-repeat
+      background-size: cover
+
+  .rankings__item-num
+    color: $color-yellow
+
+  .rankings__item-table-cell
+    border-right: 1px solid $color-yellow
+    +respond-to($xsmall)
+      border-bottom: 1px solid $color-yellow
+
+  .rankings__item-table
+    border: 1px solid $color-yellow
+
+.rankings__item-table-text
+  font-size: 10px
+  line-height: 14px
+  font-weight: 700
+  color: #848586
+  text-transform: uppercase
+  margin-right: 14px
+
+  +respond-to($xsmall)
+    width: 70px
+
+.rankings__item-table-text--runner-up
+  min-width: 72px
+
+  +respond-to($small)
+    min-width: 65px
+
+  +respond-to($xsmall)
+    min-width: auto
+
+.rankings__item-table-value
+  font-size: 10px
+  line-height: 14px
+  font-weight: 700
+  text-transform: uppercase

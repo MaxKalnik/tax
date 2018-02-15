@@ -1,0 +1,462 @@
+-
+  var values = [
+   {
+     description: "Alaska",
+     finalRank: 1,
+     perCapitaTax: "3,430.68",
+     expenditures: "12,512.07",
+     govermentSpending: "-12.38%",
+     rankTaxes: 50,
+     taxesOfRevenue: "22.54%"
+   },
+   {
+     description: "New Mexico",
+     finalRank: 2,
+     perCapitaTax: "4,337.18",
+     expenditures: "7,722.06",
+     govermentSpending: "-7.46%",
+     rankTaxes: 49,
+     taxesOfRevenue: "35.82%"
+   },
+   {
+     description: "Wyoming",
+     finalRank: 3,
+     perCapitaTax: "6,829.28",
+     expenditures: "9,987.96",
+     govermentSpending: "-5.25%",
+     rankTaxes: 48,
+     taxesOfRevenue: "35.84%"
+   },
+   {
+     description: "Kentucky",
+     finalRank: 4,
+     perCapitaTax: "4,048.87",
+     expenditures: "6,334.21",
+     govermentSpending: "-5.05%",
+     rankTaxes: 35,
+     taxesOfRevenue: "41.64%"
+   },
+   {
+     description: "New York",
+     finalRank: 5,
+     perCapitaTax: "8,177.15",
+     expenditures: "11,046.25",
+     govermentSpending: "-4.72%",
+     rankTaxes: 9,
+     taxesOfRevenue: "51.02%"
+   },
+   {
+     description: "Delaware",
+     finalRank: 6,
+     perCapitaTax: "4,468.53",
+     expenditures: "7,335.28",
+     govermentSpending: "-4.68%",
+     rankTaxes: 24,
+     taxesOfRevenue: "43.68%"
+   },
+   {
+     description: "Arkansas",
+     finalRank: 7,
+     perCapitaTax: "4,053.52",
+     expenditures: "5,958.16",
+     govermentSpending: "-4.54%",
+     rankTaxes: 26,
+     taxesOfRevenue: "42.91%"
+   },
+   {
+     description: "Mississippi",
+     finalRank: 8,
+     perCapitaTax: "3,886.77",
+     expenditures: "5,607.24",
+     govermentSpending: "-4.24%",
+     rankTaxes: 44,
+     taxesOfRevenue: "37.49%"
+   },
+   {
+     description: "Oregon",
+     finalRank: 9,
+     perCapitaTax: "4,650.15",
+     expenditures: "6,757.91",
+     govermentSpending: "-3.89%",
+     rankTaxes: 47,
+     taxesOfRevenue: "36.01%"
+   },
+   {
+     description: "Vermont",
+     finalRank: 10,
+     perCapitaTax: "6,542.02",
+     expenditures: "8,753.07",
+     govermentSpending: "-3.88%",
+     rankTaxes: 13,
+     taxesOfRevenue: "48.15%"
+   },
+   {
+     description: "Louisiana",
+     finalRank: 11,
+     perCapitaTax: "4,437.60",
+     expenditures: "6,144.70",
+     govermentSpending: "-3.73%",
+     rankTaxes: 31,
+     taxesOfRevenue: "42.58%"
+   },
+   {
+     description: "West Virginia",
+     finalRank: 12,
+     perCapitaTax: "4,714.55",
+     expenditures: "6,254.06",
+     govermentSpending: "-3.66%",
+     rankTaxes: 32,
+     taxesOfRevenue: "42.11%"
+   },
+   {
+     description: "California",
+     finalRank: 13,
+     perCapitaTax: "5,891.29",
+     expenditures: "8,217.41",
+     govermentSpending: "-3.61%",
+     rankTaxes: 21,
+     taxesOfRevenue: "44.77%"
+   },
+   {
+     description: "Wisconsin",
+     finalRank: 14,
+     perCapitaTax: "4,810.29",
+     expenditures: "6,748.68",
+     govermentSpending: "-3.48%",
+     rankTaxes: 20,
+     taxesOfRevenue: "45.52%"
+   },
+   {
+     description: "Montana",
+     finalRank: 15,
+     perCapitaTax: "4,364.46",
+     expenditures: "6,086.48",
+     govermentSpending: "-3.48%",
+     rankTaxes: 37,
+     taxesOfRevenue: "41.61%"
+   },
+   {
+     description: "Massachusetts",
+     finalRank: 16,
+     perCapitaTax: "6,113.72",
+     expenditures: "8,262.35",
+     govermentSpending: "-3.04%",
+     rankTaxes: 8,
+     taxesOfRevenue: "51.17%"
+   },
+   {
+     description: "Iowa",
+     finalRank: 17,
+     perCapitaTax: "5,000.54",
+     expenditures: "6,647.30",
+     govermentSpending: "-3.01%",
+     rankTaxes: 28,
+     taxesOfRevenue: "42.63%"
+   },
+   {
+     description: "Tennessee",
+     finalRank: 18,
+     perCapitaTax: "3,381.82",
+     expenditures: "4,766.74",
+     govermentSpending: "-2.93%",
+     rankTaxes: 43,
+     taxesOfRevenue: "38.13%"
+   },
+   {
+     description: "Alabama",
+     finalRank: 19,
+     perCapitaTax: "3,555.74",
+     expenditures: "4,865.47",
+     govermentSpending: "-2.93%",
+     rankTaxes: 46,
+     taxesOfRevenue: "36.31%"
+   },
+   {
+     description: "Arizona",
+     finalRank: 20,
+     perCapitaTax: "3,591.09",
+     expenditures: "5,040.15",
+     govermentSpending: "-2.81%",
+     rankTaxes: 31,
+     taxesOfRevenue: "42.37%"
+   },
+   {
+     description: "Oklahoma",
+     finalRank: 21,
+     perCapitaTax: "3,952.33",
+     expenditures: "5,317.45",
+     govermentSpending: "-2.81%",
+     rankTaxes: 38,
+     taxesOfRevenue: "41.49%"
+   },
+   {
+     description: "Pennsylvania",
+     finalRank: 22,
+     perCapitaTax: "5,244.96",
+     expenditures: "6,760.58",
+     govermentSpending: "-2.72%",
+     rankTaxes: 14,
+     taxesOfRevenue: "47.97%"
+   },
+   {
+     description: "South Carolina",
+     finalRank: 23,
+     perCapitaTax: "3,643.75",
+     expenditures: "4,870.20",
+     govermentSpending: "-2.60%",
+     rankTaxes: 45,
+     taxesOfRevenue: "36.67%"
+   },
+   {
+     description: "Washington",
+     finalRank: 24,
+     perCapitaTax: "5,532.05",
+     expenditures: "7,189.91",
+     govermentSpending: "-2.59%",
+     rankTaxes: 39,
+     taxesOfRevenue: "41.48%"
+   },
+   {
+     description: "Michigan",
+     finalRank: 25,
+     perCapitaTax: "4,245.45",
+     expenditures: "5,551.72",
+     govermentSpending: "-2.56%",
+     rankTaxes: 36,
+     taxesOfRevenue: "41.63%"
+   },
+   {
+     description: "Missouri",
+     finalRank: 26,
+     perCapitaTax: "3,869,46",
+     expenditures: "5,128.94",
+     govermentSpending: "-2.51%",
+     rankTaxes: 34,
+     taxesOfRevenue: "41.65%"
+   },
+   {
+     description: "Rhode Island",
+     finalRank: 27,
+     perCapitaTax: "5,754.05",
+     expenditures: "7,095.93",
+     govermentSpending: "-2.31%",
+     rankTaxes: 12,
+     taxesOfRevenue: "48.75%"
+   },
+   {
+     description: "South Dakota",
+     finalRank: 28,
+     perCapitaTax: "4,356.19",
+     expenditures: "5,580.82",
+     govermentSpending: "-2.31%",
+     rankTaxes: 25,
+     taxesOfRevenue: "43.15%"
+   },
+   {
+     description: "Nebraska",
+     finalRank: 29,
+     perCapitaTax: "5,025.83",
+     expenditures: "6,265.50",
+     govermentSpending: "-2.25%",
+     rankTaxes: 40,
+     taxesOfRevenue: "41.46%"
+   },
+   {
+     description: "Georgia",
+     finalRank: 30,
+     perCapitaTax: "3,691.69",
+     expenditures: "4,793.64",
+     govermentSpending: "-2.15%",
+     rankTaxes: 19,
+     taxesOfRevenue: "45.54%"
+   },
+   {
+     description: "North Carolina",
+     finalRank: 31,
+     perCapitaTax: "4,016.75",
+     expenditures: "5,034.56",
+     govermentSpending: "-2.13%",
+     rankTaxes: 27,
+     taxesOfRevenue: "42.87%"
+   },
+   {
+     description: "Idaho",
+     finalRank: 32,
+     perCapitaTax: "3,529.84",
+     expenditures: "4,508.18",
+     govermentSpending: "-2.03%",
+     rankTaxes: 23,
+     taxesOfRevenue: "44.01%"
+   },
+   {
+     description: "Ohio",
+     finalRank: 33,
+     perCapitaTax: "4,908.59",
+     expenditures: "5,933.05",
+     govermentSpending: "-2.01%",
+     rankTaxes: 41,
+     taxesOfRevenue: "41.43%"
+   },
+   {
+     description: "Florida",
+     finalRank: 34,
+     perCapitaTax: "3,850.85",
+     expenditures: "4,835.35",
+     govermentSpending: "-1.99%",
+     rankTaxes: 33,
+     taxesOfRevenue: "41.97%"
+   },
+   {
+     description: "Minnesota",
+     finalRank: 35,
+     perCapitaTax: "6,288.82",
+     expenditures: "7,416.32",
+     govermentSpending: "-1.78%",
+     rankTaxes: 11,
+     taxesOfRevenue: "49.30%"
+   },
+   {
+     description: "Kansas",
+     finalRank: 36,
+     perCapitaTax: "4,524.12",
+     expenditures: "5,444.82",
+     govermentSpending: "-1.71%",
+     rankTaxes: 18,
+     taxesOfRevenue: "46.07%"
+   },
+   {
+     description: "Maine",
+     finalRank: 37,
+     perCapitaTax: "5,412.04",
+     expenditures: "6,276.15",
+     govermentSpending: "-1.68%",
+     rankTaxes: 4,
+     taxesOfRevenue: "54.50%"
+   },
+   {
+     description: "Illinois",
+     finalRank: 38,
+     perCapitaTax: "5,912.85",
+     expenditures: "6,904.65",
+     govermentSpending: "-1.66%",
+     rankTaxes: 6,
+     taxesOfRevenue: "53.98%"
+   },
+   {
+     description: "Utah",
+     finalRank: 39,
+     perCapitaTax: "3,859.23",
+     expenditures: "4,851.98",
+     govermentSpending: "-1.58%",
+     rankTaxes: 42,
+     taxesOfRevenue: "39.54%"
+   },
+   {
+     description: "Texas",
+     finalRank: 40,
+     perCapitaTax: "4,749.16",
+     expenditures: "5,558.92",
+     govermentSpending: "-1.46%",
+     rankTaxes: 16,
+     taxesOfRevenue: "47.46%"
+   },
+   {
+     description: "Maryland",
+     finalRank: 41,
+     perCapitaTax: "6,343.28",
+     expenditures: "7,430.94",
+     govermentSpending: "-2.01%",
+     rankTaxes: 5,
+     taxesOfRevenue: "54.08%"
+   },
+   {
+     description: "Colorado",
+     finalRank: 42,
+     perCapitaTax: "4,789.86",
+     expenditures: "5,845.36",
+     govermentSpending: "-1.40%",
+     rankTaxes: 29,
+     taxesOfRevenue: "42.61%"
+   },
+   {
+     description: "New Jersey",
+     finalRank: 43,
+     perCapitaTax: "6,548.81",
+     expenditures: "7,552.43",
+     govermentSpending: "-1.39%",
+     rankTaxes: 2,
+     taxesOfRevenue: "56.45%"
+   },
+   {
+     description: "Indiana",
+     finalRank: 44,
+     perCapitaTax: "4,098.72",
+     expenditures: "4,775.48",
+     govermentSpending: "-1.34%",
+     rankTaxes: 22,
+     taxesOfRevenue: "44.06%"
+   },
+   {
+     description: "Virginia",
+     finalRank: 45,
+     perCapitaTax: "4,822.10",
+     expenditures: "5,548.30",
+     govermentSpending: "-1.10%",
+     rankTaxes: 15,
+     taxesOfRevenue: "47.76%"
+   },
+   {
+     description: "New Hampshire",
+     finalRank: 46,
+     perCapitaTax: "4,725.00",
+     expenditures: "5,469.76",
+     govermentSpending: "-1.06%",
+     rankTaxes: 10,
+     taxesOfRevenue: "50.41%"
+   },
+   {
+     description: "Nevada",
+     finalRank: 47,
+     perCapitaTax: "5,059.25",
+     expenditures: "5,259.82",
+     govermentSpending: "-0.38%",
+     rankTaxes: 17,
+     taxesOfRevenue: "46.59%"
+   },
+   {
+     description: "Connecticut",
+     finalRank: 48,
+     perCapitaTax: "7,731.83",
+     expenditures: "7,860.78",
+     govermentSpending: "-0.20%",
+     rankTaxes: 1,
+     taxesOfRevenue: "61.78%"
+   },
+   {
+     description: "North Dakota",
+     finalRank: 49,
+     perCapitaTax: "9,465.36",
+     expenditures: "9,532.74",
+     govermentSpending: "-0.11%",
+     rankTaxes: 3,
+     taxesOfRevenue: "56.22%"
+   },
+   {
+     description: "Hawaii",
+     finalRank: 50,
+     perCapitaTax: "6,942.53",
+     expenditures: "6,825.88",
+     govermentSpending: "0.16%",
+     rankTaxes: 7,
+     taxesOfRevenue: "51.79%"
+   },
+   {
+     description: "US TOTAL",
+     finalRank: null,
+     perCapitaTax: "5,101.11",
+     expenditures: "6,587.01",
+     govermentSpending: "-2.63%",
+     rankTaxes: null,
+     taxesOfRevenue: "45.84%"
+   }
+  ]

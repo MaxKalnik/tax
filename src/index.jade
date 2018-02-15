@@ -1,0 +1,40 @@
+doctype html
+html
+  head
+    script(type='text/javascript', src='https://www.gstatic.com/charts/loader.js')
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(inline='', rel='stylesheet', type='text/css', href='style.min.css')
+    title States With The Best and Worst Value for Your Tax Dollars
+
+  body
+    .page__wrap
+      include ./partials/header.jade
+
+      article.main-article
+        .content
+          include ./partials/featured-cards.jade
+
+          include ./partials/main-block.jade
+
+          section.section.section--upper
+            include ./partials/upper.jade
+
+          section.section
+            include ./partials/note.jade
+
+          section.section.section--wide.section--best
+            include ./partials/states-best.jade
+
+          section.section.section--wide.section--worst
+            include ./partials/states-worst.jade
+
+          section.section.section--methodology
+            include ./partials/methodology.jade
+
+          section.related
+            include ./partials/related.jade
+
+      include ./partials/footer.jade
+
+    script(type='text/javascript', src='js/script.min.js')

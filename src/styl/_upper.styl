@@ -1,0 +1,35 @@
+$upper-img-width = 260px
+
+.upper__content
+  position: relative
+
+.upper__pic
+  position: absolute
+  +respond-to($small)
+    width: 150px
+    img
+      width: 150px
+
+  +respond-to($xsmall)
+    width: 150px
+    position: static
+    margin: 0 auto 30px auto
+    img
+      width: 150px
+
+.upper__text-under-title
+  @extend .under-title
+  margin-left: $upper-img-width
+  +respond-to($small)
+    margin-left: 190px
+
+  +respond-to($xsmall)
+    margin-left: 0
+
+.upper__text-under-title--last
+  +respond-to($small)
+    margin-left: 0
+
+.upper__text-main
+  @extend .main-text
+  font-weight: 600

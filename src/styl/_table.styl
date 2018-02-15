@@ -1,0 +1,378 @@
+@import "virtual/_variable.styl"
+
+.tables-container
+  margin-bottom: 24px
+
+.ranking-table
+  width: 100%
+  border-collapse: collapse
+  border-radius: 5px
+  border: 1px solid #ddeef2
+  border-top: none
+  box-sizing: border-box
+  background-image: linear-gradient(-90deg, #10BAF4 0%, #078BE9 98%)
+  thead
+    th
+      height: 46px
+      font-size: 10px
+      line-height: 16px
+      font-weight: bold
+      color: #ffffff
+      text-transform: uppercase
+      text-align: center
+      padding: 0 12px
+      box-sizing: border-box
+      border-right: 1px solid rgba(255, 255, 255, 0.3)
+      &:last-child
+        border-right: none
+
+  tbody
+    td
+      width: 14.2%
+      height: 51px
+      font-size: 12px
+      line-height: 16px
+      font-weight: 600
+      color: #0A0C0D
+      padding: 0 12px
+      box-sizing: border-box
+      text-align: center
+
+    tr
+      background: #ffffff
+      border-bottom: 1px solid #ddeef2
+      &:nth-child(odd)
+        background: #f7fdfe
+      &:last-child
+        border-bottom: none
+        .rate-block
+          background: transparent
+
+.ranking-table.ranking-table--fixed
+  background-image: linear-gradient(-90deg, #078BE9 0%, #078BE9 98%)
+
+.btn-container
+  display: flex
+  justify-content: center
+  margin-top: 24px
+
+.btn-go-back
+  display: inline-block
+  color: #24A0EE
+  border-radius: 5px
+  padding: 12px 24px
+  font-size: 12px
+  line-height: 26px
+  font-weight: 600
+  text-transform: uppercase
+  cursor: pointer
+  transition: .25s
+  border: 1px solid rgba(29, 125, 224,.2)
+  &:hover
+    background: #24A0EE
+    color: #ffffff
+    border-color: #ffffff
+
+.mobile-only
+  display: none
+
++respond-to($small)
+  .section--table
+    .breadcrumbs__wrap
+      white-space: nowrap
+      max-width: 100%
+      box-sizing border-box
+
+  .ranking-table
+    thead
+      th
+        height: 56px
+        padding: 0 8px
+
+    tbody
+      td
+        padding: 0 8px
+
++respond-to($xsmall)
+  .section--table
+    margin-bottom: 30px
+    .breadcrumbs__wrap
+      margin-bottom: 30px
+
+    .btn-container
+      margin-top: 24px
+
+  .tables-container
+    display: flex
+    flex-direction: row
+
+  .mobile-only
+    width: 180px
+    display: flex
+    flex-direction: column
+
+  .ranking-table
+    thead
+      th
+        height: 56px
+        padding: 0 8px
+
+    tbody
+      td
+        padding: 0 8px
+
+  .ranking-table.ranking-table--data
+    min-width: 460px
+
+  .ranking-table.ranking-table--fixed
+    width: 180px
+    position: relative
+    border-radius: 5px 0 0 0
+    border-right: none
+    box-shadow: 2px 0 13px 0 rgba(0,0,0,0.16)
+
+    th
+      vertical-align: middle
+
+    th:last-child
+      position: relative
+      &:after
+        content: ''
+        position: absolute
+        width: 1px
+        height: 60px
+        background: rgba(255, 255, 255, 0.3)
+        right: 0
+        top: 0
+
+    td
+      &:first-child
+        width: 2%
+
+  .ranking-table__wrapper
+    width: calc(100% - 180px)
+    overflow-x: scroll
+    padding-left: 0
+    padding-right: 0
+
+  .ranking-table--data
+    border-radius: 0 5px 5px 5px
+    border-left: none
+    thead
+      th
+        &:first-child,
+        &:nth-child(2)
+          display: none
+
+    tbody
+      td
+        &:first-child,
+        &:nth-child(2)
+          display: none
+
+.ranking-table
+  tbody
+    tr
+      &:nth-child(1)
+        .rate-block
+          background: #4B9149
+
+      &:nth-child(2)
+        .rate-block
+          background: #4E9249
+
+      &:nth-child(3)
+        .rate-block
+          background: #529449
+
+      &:nth-child(4)
+        .rate-block
+          background: #569549
+
+      &:nth-child(5)
+        .rate-block
+          background: #599649
+
+      &:nth-child(6)
+        .rate-block
+          background: #5E9849
+
+      &:nth-child(7)
+        .rate-block
+          background: #609848
+
+      &:nth-child(8)
+        .rate-block
+          background: #659A49
+
+      &:nth-child(9)
+        .rate-block
+          background: #699C49
+
+      &:nth-child(10)
+        .rate-block
+          background: #6C9D48
+
+      &:nth-child(11)
+        .rate-block
+          background: #709E49
+
+      &:nth-child(12)
+        .rate-block
+          background: #739F48
+
+      &:nth-child(13)
+        .rate-block
+          background: #77A048
+
+      &:nth-child(14)
+        .rate-block
+          background: #7BA249
+
+      &:nth-child(15)
+        .rate-block
+          background: #7FA349
+
+      &:nth-child(16)
+        .rate-block
+          background: #81A348
+
+      &:nth-child(17)
+        .rate-block
+          background: #84A548
+
+      &:nth-child(18)
+        .rate-block
+          background: #88A648
+
+      &:nth-child(19)
+        .rate-block
+          background: #8CA848
+
+      &:nth-child(20)
+        .rate-block
+          background: #8FA847
+
+      &:nth-child(21)
+        .rate-block
+          background: #94AA48
+
+      &:nth-child(22)
+        .rate-block
+          background: #97AB47
+
+      &:nth-child(23)
+        .rate-block
+          background: #9BAC47
+
+      &:nth-child(24)
+        .rate-block
+          background: #9FAE48
+
+      &:nth-child(25)
+        .rate-block
+          background: #A3AF48
+
+      &:nth-child(26)
+        .rate-block
+          background: #A6B047
+
+      &:nth-child(27)
+        .rate-block
+          background: #AAB248
+
+      &:nth-child(28)
+        .rate-block
+          background: #AEB348
+
+      &:nth-child(29)
+        .rate-block
+          background: #B1B447
+
+      &:nth-child(30)
+        .rate-block
+          background: #B5B548
+
+      &:nth-child(31)
+        .rate-block
+          background: #B8B647
+
+      &:nth-child(32)
+        .rate-block
+          background: #BBB847
+
+      &:nth-child(33)
+        .rate-block
+          background: #C0B947
+
+      &:nth-child(34)
+        .rate-block
+          background: #C3BA47
+
+      &:nth-child(35)
+        .rate-block
+          background: #C7BC47
+
+      &:nth-child(36)
+        .rate-block
+          background: #CBBD47
+
+      &:nth-child(37)
+        .rate-block
+          background: #CDBD46
+
+      &:nth-child(38)
+        .rate-block
+          background: #D2BF47
+
+      &:nth-child(39)
+        .rate-block
+          background: #D5C047
+
+      &:nth-child(40)
+        .rate-block
+          background: #D9C247
+
+      &:nth-child(41)
+        .rate-block
+          background: #DCC347
+
+      &:nth-child(42)
+        .rate-block
+          background: #E0C447
+
+      &:nth-child(43)
+        .rate-block
+          background: #E4C547
+
+      &:nth-child(43)
+        .rate-block
+          background: #E8C747
+
+      &:nth-child(44)
+        .rate-block
+          background: #EBC846
+
+      &:nth-child(45)
+        .rate-block
+          background: #EFC947
+
+      &:nth-child(46)
+        .rate-block
+          background: #F2CA46
+
+      &:nth-child(47)
+        .rate-block
+          background: #F6CC46
+
+      &:nth-child(48)
+        .rate-block
+          background: #F9CC46
+
+      &:nth-child(49)
+        .rate-block
+          background: #FDCE49
+
+      &:nth-child(50)
+        .rate-block
+          background: #FDCE49

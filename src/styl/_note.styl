@@ -1,0 +1,58 @@
+.note__content
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  max-height: 320px
+  padding: 32px
+  background: #fffdf6
+  border: 1px solid #fee8a0
+
+  +respond-to($medium)
+    max-height: none
+
+  +respond-to($small)
+    padding: 24px
+
+  +respond-to($xsmall)
+    padding: 16px
+
+.note__text
+  @extend .main-text
+  width: 650px
+  position: relative
+  padding-left: 48px
+  margin-right: 32px
+  margin-bottom: 16px
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    width: 32px
+    height: 32px
+    background: url(images/svg/icon-position-one.svg) center no-repeat
+    background-size: cover
+
+  &:last-child
+    width: 288px
+    margin-right: 0
+    margin-bottom: 0
+
+  +respond-to($medium)
+    width: 100%
+    margin-right: 0
+    box-sizing: border-box
+    &:last-child
+      width: 100%
+
+  +respond-to($xsmall)
+    padding-left: 42px
+
+.note__text:nth-child(2)
+  &:before
+    background: url(images/svg/icon-position-two.svg) center no-repeat
+    background-size: cover
+
+.note__text:nth-child(3)
+  &:before
+    background: url(images/svg/icon-position-three.svg) center no-repeat
+    background-size: cover
